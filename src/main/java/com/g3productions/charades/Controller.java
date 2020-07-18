@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-@CrossOrigin(origins = "https://remote-charades.herokuapp.com")
+@CrossOrigin(origins = {"https://remote-charades.herokuapp.com", "http://remote-charades.herokuapp.com"})
 @RestController
 public class Controller {
 
