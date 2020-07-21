@@ -49,7 +49,7 @@ public class Session {
     private boolean currentTeam;
 
     Session() {
-        sessionId = generateId(10);
+        sessionId = generateId(3);
         started = false;
         teamOneWords = new ArrayList<String>();
         teamTwoWords = new ArrayList<String>();
