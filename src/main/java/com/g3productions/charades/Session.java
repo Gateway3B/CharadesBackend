@@ -80,6 +80,8 @@ public class Session {
     }
 
     public void addUser(User user) {
+        if(usersTeamOne.containsValue(user.getUsername()) || usersTeamTwo.containsValue(user.getUsername()))
+            return;
         if(user.getTeam()) {
             usersTeamOne.put(user.getUsername(), user);
         } else {
